@@ -1,60 +1,63 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>AgroAviário101 | Catálogo</title>
   <style>
-    body, html {
+    body {
       margin: 0;
-      padding: 0;
       height: 100vh;
-      background: url('https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/bg.jpg') no-repeat center center/cover;
+      overflow: hidden;
+      background-image: url("./fundo.png"); /* Nome do arquivo de imagem de fundo */
+      background-size: cover;
+      background-position: center;
+      font-family: Arial, sans-serif;
       display: flex;
       align-items: center;
       justify-content: center;
-      overflow: hidden;
-      font-family: Arial, sans-serif;
     }
-
     .container {
       display: flex;
-      gap: 60px;
+      gap: 40px;
     }
-
-    .item {
-      text-align: center;
-      color: black;
-    }
-
-    .item img {
-      width: 120px;
-      height: 120px;
+    .opcao {
+      background-color: white;
+      padding: 20px;
       border-radius: 20px;
-      background: white;
-      padding: 10px;
-    }
-
-    .item p {
-      margin-top: 10px;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+      text-decoration: none;
+      color: black;
       font-weight: bold;
-      font-size: 20px;
+    }
+    .opcao:hover {
+      transform: scale(1.05);
+      transition: transform 0.2s ease-in-out;
+    }
+    .opcao img {
+      width: 100%;
+      height: 100px;
+      object-fit: contain;
+      margin-bottom: 10px;
     }
   </style>
 </head>
 <body>
   <div class="container">
-    <a class="item" href="#racoes" target="_blank">
-      <img src="https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/racao.jpg" alt="Rações">
-      <p>RAÇÕES</p>
+    <a class="opcao" href="racoes.html" target="_blank">
+      <img src="./racao.png" alt="Rações" />
+      RAÇÕES
     </a>
-    <a class="item" href="#gaiolas" target="_blank">
-      <img src="https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/gaiola.jpg" alt="Gaiolas">
-      <p>GAIOLAS</p>
+    <a class="opcao" href="gaiolas.html" target="_blank">
+      <img src="./gaiola.png" alt="Gaiolas" />
+      GAIOLAS
     </a>
-    <a class="item" href="#ferramentas" target="_blank">
-      <img src="https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/ferramenta.jpg" alt="Ferramentas">
-      <p>FERRAMENTA</p>
+    <a class="opcao" href="ferramentas.html" target="_blank">
+      <img src="./ferramenta.png" alt="Ferramentas" />
+      FERRAMENTAS
     </a>
   </div>
 </body>
