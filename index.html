@@ -1,40 +1,61 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroAviário101 | Catálogo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
-    <script src="https://cdn.tailwindcss.com"></script>
-    <style>
-      body {
-        font-family: 'Inter', sans-serif;
-        margin: 0;
-        padding: 0;
-        overflow: hidden;
-      }
-    </style>
-  </head>
-  <body class="text-gray-800">
-    <!-- Página única com fundo de imagem preenchendo tudo -->
-    <div class="w-screen h-screen bg-cover bg-center flex flex-col items-center justify-center" style="background-image: url('https://i.imgur.com/qphCIGw.jpeg');">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AgroAviário101 | Catálogo</title>
+  <style>
+    body, html {
+      margin: 0;
+      padding: 0;
+      height: 100vh;
+      background: url('https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/bg.jpg') no-repeat center center/cover;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      font-family: Arial, sans-serif;
+    }
 
-      <!-- Opções centralizadas no meio -->
-      <div class="flex justify-center items-center gap-12">
-        <a href="racoes.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-xl">
-          <img src="https://i.imgur.com/ZyHw0NH.png" alt="Rações" class="w-12 h-12 mb-1">
-          <p class="text-md font-bold">RAÇÕES</p>
-        </a>
-        <a href="gaiolas.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-xl">
-          <img src="https://i.imgur.com/4UqMNtt.png" alt="Gaiolas" class="w-12 h-12 mb-1">
-          <p class="text-md font-bold">GAIOLAS</p>
-        </a>
-        <a href="ferramentas.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-xl">
-          <img src="https://i.imgur.com/Cv4sCRD.png" alt="Ferramentas" class="w-12 h-12 mb-1">
-          <p class="text-md font-bold">FERRAMENTAS</p>
-        </a>
-      </div>
+    .container {
+      display: flex;
+      gap: 60px;
+    }
 
-    </div>
-  </body>
+    .item {
+      text-align: center;
+      color: black;
+    }
+
+    .item img {
+      width: 120px;
+      height: 120px;
+      border-radius: 20px;
+      background: white;
+      padding: 10px;
+    }
+
+    .item p {
+      margin-top: 10px;
+      font-weight: bold;
+      font-size: 20px;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <a class="item" href="#racoes" target="_blank">
+      <img src="https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/racao.jpg" alt="Rações">
+      <p>RAÇÕES</p>
+    </a>
+    <a class="item" href="#gaiolas" target="_blank">
+      <img src="https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/gaiola.jpg" alt="Gaiolas">
+      <p>GAIOLAS</p>
+    </a>
+    <a class="item" href="#ferramentas" target="_blank">
+      <img src="https://raw.githubusercontent.com/Gabrielhenriqu3/Agroaviario101/main/assets/ferramenta.jpg" alt="Ferramentas">
+      <p>FERRAMENTA</p>
+    </a>
+  </div>
+</body>
 </html>
