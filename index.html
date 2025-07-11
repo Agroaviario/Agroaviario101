@@ -13,33 +13,34 @@
     </style>
   </head>
   <body class="bg-white text-gray-800">
-    <!-- Introdução estilo imagem com logo e fundo azul -->
-    <section class="w-full relative text-white">
+    <!-- Introdução com fundo preenchido e opções entre imagem e parte branca -->
+    <section class="w-full relative text-white min-h-[50vh]">
       <img src="https://i.imgur.com/fI95L6b.jpg" alt="Banner AgroAviário101" class="absolute inset-0 w-full h-full object-cover z-0">
-      <div class="relative z-10 bg-blue-800 bg-opacity-80 py-6">
-        <div class="max-w-6xl mx-auto px-4 text-center">
+      <div class="relative z-10 bg-blue-800 bg-opacity-80 h-full flex flex-col justify-between">
+        <div class="pt-6">
           <img src="logo.png" alt="Logo AgroAviário101" class="mx-auto mb-4 w-32">
+        </div>
 
-          <div class="flex flex-col md:flex-row justify-center items-center gap-12">
-            <a href="racoes.html" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
-              <img src="https://i.imgur.com/ZyHw0NH.png" alt="Rações" class="w-28 h-28 mb-2 rounded-full">
-              <p class="text-xl font-bold">RAÇÕES</p>
-            </a>
-            <a href="gaiolas.html" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
-              <img src="https://i.imgur.com/4UqMNtt.png" alt="Gaiolas" class="w-28 h-28 mb-2 rounded-full">
-              <p class="text-xl font-bold">GAIOLAS</p>
-            </a>
-            <a href="ferramentas.html" target="_blank" class="flex flex-col items-center hover:scale-105 transition-transform">
-              <img src="https://i.imgur.com/Cv4sCRD.png" alt="Ferramentas" class="w-28 h-28 mb-2 rounded-full">
-              <p class="text-xl font-bold">FERRAMENTAS</p>
-            </a>
-          </div>
+        <!-- Opções quadradas posicionadas no final da parte azul -->
+        <div class="flex justify-center gap-6 mb-[-3rem] z-10">
+          <a href="racoes.html" target="_blank" class="w-36 h-36 bg-white text-blue-800 rounded-xl flex flex-col justify-center items-center shadow-lg hover:scale-105 transition-transform">
+            <img src="https://i.imgur.com/ZyHw0NH.png" alt="Rações" class="w-16 h-16 mb-2">
+            <p class="text-lg font-bold">RAÇÕES</p>
+          </a>
+          <a href="gaiolas.html" target="_blank" class="w-36 h-36 bg-white text-blue-800 rounded-xl flex flex-col justify-center items-center shadow-lg hover:scale-105 transition-transform">
+            <img src="https://i.imgur.com/4UqMNtt.png" alt="Gaiolas" class="w-16 h-16 mb-2">
+            <p class="text-lg font-bold">GAIOLAS</p>
+          </a>
+          <a href="ferramentas.html" target="_blank" class="w-36 h-36 bg-white text-blue-800 rounded-xl flex flex-col justify-center items-center shadow-lg hover:scale-105 transition-transform">
+            <img src="https://i.imgur.com/Cv4sCRD.png" alt="Ferramentas" class="w-16 h-16 mb-2">
+            <p class="text-lg font-bold">FERRAMENTAS</p>
+          </a>
         </div>
       </div>
     </section>
 
-    <!-- Catálogo continuará abaixo normalmente -->
-    <section class="max-w-6xl mx-auto px-4 py-6">
+    <!-- Parte branca reduzida com catálogo -->
+    <section class="max-w-6xl mx-auto px-4 pt-20 pb-6">
       <h2 class="text-2xl font-bold mb-6 text-center">Catálogo de Produtos</h2>
       <!-- Aqui virão os produtos -->
     </section>
