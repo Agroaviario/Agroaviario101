@@ -9,45 +9,42 @@
     <style>
       body {
         font-family: 'Inter', sans-serif;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
       }
     </style>
   </head>
   <body class="bg-white text-gray-800">
-    <!-- Introdução com animais e logo -->
-    <section class="w-full relative bg-white text-black">
-      <div class="relative z-10 w-full flex justify-center items-center gap-4 px-4 pt-6">
-        <img src="https://i.imgur.com/SxPgphl.png" alt="Husky" class="h-36 object-contain" />
-        <img src="https://i.imgur.com/IAcN3NV.png" alt="Pastor Alemão" class="h-36 object-contain" />
-        <img src="logo.png" alt="Logo AgroAviário101" class="h-32 object-contain" />
-        <img src="https://i.imgur.com/d1fZ1Hu.png" alt="Gato" class="h-36 object-contain" />
-        <img src="https://i.imgur.com/yR0zHeq.png" alt="Golden" class="h-36 object-contain" />
+    <!-- Página única e fixa com imagem de fundo -->
+    <div class="relative w-screen h-screen bg-cover bg-center flex flex-col items-center justify-between" style="background-image: url('https://i.imgur.com/fI95L6b.jpg');">
+      <!-- Topo com animais e logo -->
+      <div class="w-full flex justify-center items-center gap-4 pt-4">
+        <img src="https://i.imgur.com/SxPgphl.png" alt="Husky" class="h-28 object-contain" />
+        <img src="https://i.imgur.com/IAcN3NV.png" alt="Pastor Alemão" class="h-28 object-contain" />
+        <img src="logo.png" alt="Logo AgroAviário101" class="h-24 object-contain" />
+        <img src="https://i.imgur.com/d1fZ1Hu.png" alt="Gato" class="h-28 object-contain" />
+        <img src="https://i.imgur.com/yR0zHeq.png" alt="Golden" class="h-28 object-contain" />
       </div>
 
-      <!-- Parte azul com fundo preenchido -->
-      <div class="relative w-full bg-cover bg-center h-48" style="background-image: url('https://i.imgur.com/fI95L6b.jpg');">
-        <div class="absolute inset-0 bg-blue-900 bg-opacity-80"></div>
-        <!-- Opções centralizadas entre branco e azul -->
-        <div class="relative z-10 flex justify-center items-end h-full gap-12 pb-2">
-          <a href="racoes.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-lg">
-            <img src="https://i.imgur.com/ZyHw0NH.png" alt="Rações" class="w-12 h-12 mb-1">
-            <p class="text-md font-bold">RAÇÕES</p>
-          </a>
-          <a href="gaiolas.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-lg">
-            <img src="https://i.imgur.com/4UqMNtt.png" alt="Gaiolas" class="w-12 h-12 mb-1">
-            <p class="text-md font-bold">GAIOLAS</p>
-          </a>
-          <a href="ferramentas.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-lg">
-            <img src="https://i.imgur.com/Cv4sCRD.png" alt="Ferramentas" class="w-12 h-12 mb-1">
-            <p class="text-md font-bold">FERRAMENTAS</p>
-          </a>
-        </div>
+      <!-- Opções no centro -->
+      <div class="flex justify-center items-center gap-10">
+        <a href="racoes.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-xl">
+          <img src="https://i.imgur.com/ZyHw0NH.png" alt="Rações" class="w-12 h-12 mb-1">
+          <p class="text-md font-bold">RAÇÕES</p>
+        </a>
+        <a href="gaiolas.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-xl">
+          <img src="https://i.imgur.com/4UqMNtt.png" alt="Gaiolas" class="w-12 h-12 mb-1">
+          <p class="text-md font-bold">GAIOLAS</p>
+        </a>
+        <a href="ferramentas.html" target="_blank" class="w-28 h-28 bg-white text-black rounded-xl flex flex-col justify-center items-center shadow-xl">
+          <img src="https://i.imgur.com/Cv4sCRD.png" alt="Ferramentas" class="w-12 h-12 mb-1">
+          <p class="text-md font-bold">FERRAMENTAS</p>
+        </a>
       </div>
-    </section>
 
-    <!-- Catálogo de produtos -->
-    <section class="max-w-6xl mx-auto px-4 pt-12 pb-6">
-      <h2 class="text-2xl font-bold mb-6 text-center">Catálogo de Produtos</h2>
-      <!-- Produtos virão aqui -->
-    </section>
+      <!-- Rodapé invisível para alinhamento -->
+      <div class="h-10"></div>
+    </div>
   </body>
 </html>
