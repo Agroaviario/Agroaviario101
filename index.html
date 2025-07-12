@@ -9,7 +9,7 @@
       margin: 0;
       height: 100vh;
       overflow: hidden;
-      background-image: url("./fundo.png"); /* Nome do arquivo de imagem de fundo */
+      background-image: url("./fundo.png");
       background-size: cover;
       background-position: center;
       font-family: Arial, sans-serif;
@@ -19,7 +19,9 @@
     }
     .container {
       display: flex;
-      gap: 80px; /* Aumenta o espaço entre as opções */
+      gap: 60px;
+      flex-wrap: wrap;
+      justify-content: center;
     }
     .opcao {
       background-color: white;
@@ -61,6 +63,14 @@
     <a class="opcao" href="ferramentas.html" target="_blank">
       <img src="./ferramenta.png" alt="Ferramentas" />
       FERRAMENTAS
+    </a>
+    <a class="opcao" href="veterinaria.html" target="_blank">
+      <img src="./veterinaria.png" alt="Veterinária" />
+      VETERINÁRIA
+    </a>
+    <a class="opcao" href="medicamentos.html" target="_blank">
+      <img src="./medicamentos.png" alt="Medicamentos" />
+      MEDICAMENTOS
     </a>
   </div>
 </body>
