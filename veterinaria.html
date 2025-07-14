@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Vacinas | AgroAviário101</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #f4f9f9;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    header {
+      background-color: #2e86de;
+      color: white;
+      padding: 20px;
+      width: 100%;
+      text-align: center;
+      font-size: 1.5em;
+    }
+    section {
+      max-width: 1000px;
+      padding: 40px 20px;
+      display: flex;
+      flex-direction: column;
+      gap: 40px;
+    }
+    h2 {
+      color: #2e86de;
+      border-bottom: 2px solid #dcdcdc;
+      padding-bottom: 5px;
+    }
+    .vacinas {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      justify-content: center;
+    }
+    .vacina {
+      background: white;
+      padding: 20px;
+      width: 220px;
+      border-radius: 10px;
+      box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+      text-align: center;
+    }
+    .vacina img {
+      width: 100%;
+      height: 120px;
+      object-fit: cover;
+      border-radius: 8px;
+      margin-bottom: 10px;
+    }
+    .vacina h3 {
+      margin: 10px 0 5px;
+      font-size: 1.1em;
+      color: #2c3e50;
+    }
+    .vacina p {
+      font-size: 0.9em;
+      color: #555;
+    }
+    .preco {
+      margin-top: 5px;
+      font-weight: bold;
+      color: #27ae60;
+    }
+  </style>
+</head>
+<body>
+  <header>Vacinas | AgroAviário101</header>
+  <section>
+    <div>
+      <h2>Cães</h2>
+      <div class="vacinas">
+        <div class="vacina">
+          <img src="./vacina-v8.jpg" alt="Vacina V8">
+          <h3>V8</h3>
+          <p>Protege contra várias doenças virais e bacterianas.</p>
+          <p class="preco">R$ 89,90</p>
+        </div>
+        <div class="vacina">
+          <img src="./vacina-v10.jpg" alt="Vacina V10">
+          <h3>V10</h3>
+          <p>Inclui mais cepas de leptospira além da V8.</p>
+          <p class="preco">R$ 99,90</p>
+        </div>
+        <div class="vacina">
+          <img src="./vacina-rabica.jpg" alt="Vacina Antirrábica">
+          <h3>Antirrábica</h3>
+          <p>Essencial e obrigatória por lei.</p>
+          <p class="preco">R$ 45,00</p>
+        </div>
+        <div class="vacina">
+          <img src="./vacina-gripe.jpg" alt="Vacina Gripe Canina">
+          <h3>Gripe Canina</h3>
+          <p>Contra a tosse dos canis.</p>
+          <p class="preco">R$ 72,50</p>
+        </div>
+      </div>
+    </div>
+
+    <div>
+      <h2>Gatos</h2>
+      <div class="vacinas">
+        <div class="vacina">
+          <img src="./vacina-v3.jpg" alt="Vacina V3">
+          <h3>V3</h3>
+          <p>Protege contra doenças respiratórias e panleucopenia.</p>
+          <p class="preco">R$ 79,90</p>
+        </div>
+        <div class="vacina">
+          <img src="./vacina-v4.jpg" alt="Vacina V4">
+          <h3>V4</h3>
+          <p>Inclui clamidiose felina.</p>
+          <p class="preco">R$ 89,90</p>
+        </div>
+        <div class="vacina">
+          <img src="./vacina-v5.jpg" alt="Vacina V5">
+          <h3>V5</h3>
+          <p>Adiciona proteção contra FeLV.</p>
+          <p class="preco">R$ 99,90</p>
+        </div>
+        <div class="vacina">
+          <img src="./vacina-rabica.jpg" alt="Vacina Antirrábica Gato">
+          <h3>Antirrábica</h3>
+          <p>Essencial para gatos com acesso externo.</p>
+          <p class="preco">R$ 45,00</p>
+        </div>
+      </div>
+    </div>
+  </section>
+</body>
+</html>
